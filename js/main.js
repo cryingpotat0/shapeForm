@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  shapeForm("f(x) = x^2/500", $('.shaped'));
+  $('button').click(function(){
+    shapeForm("f(x) = " + $('textarea').val(), $('.shaped'));
+  })
 
 });
 
