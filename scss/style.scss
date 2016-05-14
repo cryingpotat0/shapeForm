@@ -1,0 +1,23 @@
+@import 'vendors/_bootstrap.scss';
+
+$primary-color:linear-gradient(#04519b, #044687 60%, #033769);
+
+header{
+	background: $primary-color;
+	color:#fff;
+	min-height:100px;
+	padding-top:25px;
+	
+	form{
+		float:right;
+		}
+		
+	.logo{
+	float:left;
+		}
+	}
+
+.panel-heading{
+	background:$primary-color !important;
+	color:#fff !important;
+	}
