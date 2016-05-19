@@ -1,9 +1,8 @@
 
 .shaped{
-  height:100px;
+  height:300px;
   width:50vw;
-  margin-left: 10%;
-  background:black url(../images/eiffel.jpg) center top no-repeat;background-size:cover;
+  background:white;
   -webkit-shape-margin:20px;
   -ms-transform: rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Safari */
@@ -13,4 +12,50 @@
   -o-transform: scaleY(-1);
   -ms-transform: scaleY(-1);
   transform: scaleY(-1);
+
 }
+
+.shaped-outer{
+    border: 1px dashed white;
+}
+
+h2{
+  font-family:'Permanent Marker';
+  color:white;
+}
+
+body{
+  background-color:#1c1c1c;
+}
+
+.btn{
+		border:3px solid white;
+		width:20%;
+    height:8vh;
+		margin:0;
+		padding:0;
+		-ms-transform: skewY(-5deg); /* IE 9 */
+    -webkit-transform: skewY(-5deg); /* Safari */
+    transform: skewY(-5deg); /* Standard syntax */
+    background-color: #1c1c1c;
+    color:white;
+    font-weight:bold;
+    font-family: 'Permanent Marker';
+    letter-spacing: 2px;
+	}
+
+  .btn:hover{
+    border:3px solid white;
+		width:20%;
+    height:8vh;
+		margin:0;
+		padding:0;
+		-ms-transform: skewY(-5deg); /* IE 9 */
+    -webkit-transform: skewY(-5deg); /* Safari */
+    transform: skewY(-5deg); /* Standard syntax */
+    background-color: white;
+    color:#1c1c1c;
+    font-weight:bold;
+    font-family: 'Permanent Marker';
+    letter-spacing: 2px;
+  }

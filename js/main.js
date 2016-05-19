@@ -1,14 +1,15 @@
 $(document).ready(function(){
-  $('button').click(function(){
-    shapeForm("f(x) = " + $('textarea').val(), $('.shaped'));
+  $('.submit').click(function(){
+    shapeForm("f(x) = " + $('input').val(), $('.shaped'));
   })
+
 
 });
 
 var shapeForm = function(fn, div){
   var parser = math.parser();
   parser.eval(fn);
-  console.log(parser.eval("f(0)"));
+//  console.log(parser.eval("f(0)"));
   var polygonValues = [];
 
   for(i =0; i<div.width(); i++){
@@ -19,5 +20,5 @@ var shapeForm = function(fn, div){
 }
 //  console.log(polygonValues.join());
   $('.shaped').css("-webkit-clip-path", "polygon(" + polygonValues.join() + ")");
-
+  $('.shaped').css("shape-outside", "polygon(" + polygonValues.join() + ")");
 }
